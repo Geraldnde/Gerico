@@ -1,287 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerald (Gerico) | Creative Technologist | 3D &amp; Immersive Technology</title>
+    <meta name="description" content="Tech for Humanity. Gerald (Gerico) is a creative technologist working with 3D and immersive technology, exploring healthcare innovation, simulation-based learning, AI-assisted visual storytelling, traditional art and community impact.">
 
+    <!-- Link preview (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:title" content="Gerald (Gerico) | Creative Technologist | 3D &amp; Immersive Technology">
+    <meta property="og:description" content="Tech for Humanity. Exploring blind spots in healthcare and beyond through creative thinking and immersive 3D technology.">
+    <link rel="canonical" href="https://cheagerald.netlify.app/">
+    <meta property="og:url" content="https://cheagerald.netlify.app/">
+    <meta property="og:image" content="https://cheagerald.netlify.app/images/profile.png">
+    <meta property="og:image:alt" content="Portrait of Gerald in traditional attire">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <title>Gerico</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Optional: Bootstrap JS (for buttons, modals, etc.) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="icon" href="images/Geri_code.jpeg">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.50/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
-
 <body>
-    <main class="bucket">
-        <div class="hero-div">
+    <div class="container" id="home">
+        <video class="back-vid" loop autoplay muted playsinline src="videos/galaxy.mp4" aria-hidden="true"></video>
 
-            <header>
-                <div class="container-fluid p-100">
-                    <ul class="nav nav-pills justify-content-around flex-wrap w-100" id="main-nav">
-                        <li class="nav-item flex-fill text-center">
-                            <a class="nav-link active py-2" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item flex-fill text-center">
-                            <a class="nav-link py-2" href="#about-me-section">About</a>
-                        </li>
-                        <li class="nav-item flex-fill text-center">
-                            <a class="nav-link py-2" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item flex-fill text-center">
-                            <a class="nav-link py-2" href="#volunteerism">Volunteerism</a>
-                        </li>
-                        <li class="nav-item flex-fill text-center">
-                            <a class="nav-link py-2" href="#footer-contact">Contact</a>
-                        </li>
-                    </ul>
+        <!-- =====================================
+             HEADER / NAVIGATION
+        ===================================== -->
+        <header>
+            <a class="left" href="#home" aria-label="Back to top">
+                <img src="images/Geri_code.jpeg" alt="Gerico logo">
+                <h2><span style="color:#72a1de">Ger</span>ico</h2>
+            </a>
+            <nav aria-label="Main menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#three-d">3D Work</a></li>
+                    <li><a href="#stories">Stories</a></li>
+                    <li><a href="#innovation">Innovation</a></li>
+                    <li><a href="#studio">Studio</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#speaking">Speaking</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+            <a class="header-contact" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact</a>
 
+            <!-- Phone menu button (only visible on small screens) -->
+            <button class="menu-icon" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+        </header>
 
-            </header>
-
-            <!-- Hero section with my profile pic
-             <p class="hero-tagline">I create health-focused experiences using art, education and technology</p> -->
-            <section id="hero" class="me-section section-overlay">
-                <div class="me-content">
-                    <h1 class="intro"><span class="me-intro-text">Hello, I'm
-                            <br>
-                        </span> <span class="my-name">Chea Gerald Nde T.</span>
-                    </h1>
-                    
-                                  
-                    <p class="hero-tagline"> Founder, Gifted Hands & Healing Voices | Artist | Nurse - Midwife | Global Youth Leader | Tech Creator</p> 
-                </div>
-              <a href="#hero" class="hero-btn"> Discover More</a> 
-            </section>
+        <!-- Phone sidebar menu -->
+        <div class="sidebar" id="sidebar" role="navigation" aria-label="Phone menu" aria-hidden="true" inert>
+            <button class="close-icon" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#three-d">3D Work</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+                <li><a href="#studio">Studio</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#speaking">Speaking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <!-- sliding text -->
-        <marquee>
-            <h1 id="home" class="welcome">Empowering communities through art and healthcare</h1>
-        </marquee>
 
+        <div class="blackhole-box">
+            <video loop autoplay muted playsinline src="videos/blackhole.mp4" aria-hidden="true"></video>
+        </div>
 
-
-
-        <!-- ABOUT ME SECTION -->
-        <section id="about-me-section" class="about-section">
-            <!-- PHOTO SIDE -->
-            <div class="about-photo">
-  <!-- Leadership Journey; visible by default-->
-<div class="photo-wrapper" data-hover="Click to explore my Leadership journey" style="display:inline-block;">
-  <img src="Geri.png" alt="Chea Gerald Leadership" data-link="Leadership.html">
-</div>
-<!-- Nursing Journey; hidden initially-->
-  <div class="photo-wrapper" data-hover="Click to explore my nursing journey" style="display:none;">
-  <img src="Geri3.png" alt="Chea Gerald Nursing" data-link="nursing.html">
-</div>
-<!-- Art Journey -->
-<div class="photo-wrapper" data-hover="Click to view my creative portfolio" style="display:none;">
-  <img src="Geri2.png" alt="Chea Gerald Art" data-link="art.html">
-</div>
-  
-<!-- Art Journey -->
-<div class="photo-wrapper" data-hover="Click to view my creative portfolio" style="display:none;">
-  <img src="Geri0.png" alt="Chea Gerald Art" data-link="art.html">
-</div>
-           
- <!--<img src="Geri.png" alt="Chea Gerald Nursing" data-link="nursing.html" data-hover="Click to explore my nursing journey">
-  <img src="Geri1.png" alt="Chea Gerald Leadership" data-link="leadership.html" data-hover="Click to see my fellowships and recognitions" style="display:none;">
-  <img src="Geri2.png" alt="Chea Gerald Art" data-link="art.html" data-hover="Click to view my creative portfolio" style="display:none;">-->
-<button id="next-btn" class="hero-btn">Next Photo</button>
-  
-</div>
-            
-            <div class="about-text">
-                <h2 id="about-heading">Who I am</h2>
-            
-            
-                <p>
-                    Chea Gerald comes from the Northwest Region of Cameroon, where his work sits at the intersection of art, 
-                    health and youth advocacy. <br> <br> 
-                    As a nursing and midwifery student, professional artist and founder of <strong>Gifted Hands and Healing Voices</strong>, 
-                    he uses creativity as a tool for healing, empowerment, and resilience.<br> <br>
-                    
-                    Through community engagements and affiliations with fellowships, such as the Millennium Fellowship, Nivishe Mntal Health Fellowship, Global Arts in Medicine Fellowship, 
-                    his initiative has been featured in spaces that highlight the power of art in advancing wellbeing and inclusion.<br> <br>
-                    
-                    Recognized as a <strong> QECT 100 Young Leader Awardee (2026) </strong>, Gerald continues to build platfroms that amplify voices, foster safe spaces, 
-                    and inspire young people to makie healthier choices for their future. In deed, his journey is one of weaving together artistry, healthcare, technology and leadership to 
-                    transform challenges into opportunities for growth and impact.
-
-                </p>
-                <a href="My_Journey.html" class="hero-btn"> Read More</a> 
-
+        <!-- =====================================
+             HERO
+        ===================================== -->
+        <section class="hero">
+            <div class="hero-info">
+                <div class="hero-info-title">
+                    <i class="fa-brands fa-sketch" aria-hidden="true"></i>
+                    Creative Technologist | 3D &amp; Immersive Technology
+                </div>
+                <h1>Tech <span class="gradient">for</span> <span class="gradient">Humanity</span></h1>
+                <p>I explore blind spots in healthcare and beyond, using creative thinking and immersive 3D
+                    technology to develop meaningful experiences and innovative solutions to real-world challenges.</p>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#three-d"><i class="fa-solid fa-cube" aria-hidden="true"></i> View My Work</a>
+                    <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Me</a>
+                </div>
+                <a class="hero-award" href="#recognition">
+                    <i class="fa-solid fa-award" aria-hidden="true"></i>
+                    2026 Queen Elizabeth II Commonwealth Trust 100 Young Leaders Awardee
+                </a>
             </div>
-            
-            
+
+            <div class="hero-visual">
+                <div class="sphere-wrapper">
+
+                    <!-- Orbit rings with glowing dots -->
+                    <div class="sphere-orbit-ring ring-1">
+                        <span class="orbit-dot dot1"></span>
+                        <span class="orbit-dot dot2"></span>
+                    </div>
+                    <div class="sphere-orbit-ring ring-2">
+                        <span class="orbit-dot dot1"></span>
+                        <span class="orbit-dot dot2"></span>
+                    </div>
+                    <div class="sphere-orbit-ring ring-3">
+                        <span class="orbit-dot dot1"></span>
+                        <span class="orbit-dot dot2"></span>
+                    </div>
+
+                    <div class="sphere">
+                        <div class="particle p1"></div>
+                        <div class="particle p2"></div>
+                        <div class="particle p3"></div>
+                        <div class="particle p4"></div>
+                        <div class="particle p5"></div>
+
+                        <div class="energy-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                            <span class="line line4"></span>
+                            <span class="line line5"></span>
+                            <span class="line line6"></span>
+                            <span class="line line7"></span>
+                            <div class="pulse-path pulse1"><span class="energy-pulse"></span></div>
+                            <div class="pulse-path pulse2"><span class="energy-pulse"></span></div>
+                            <div class="pulse-path pulse3"><span class="energy-pulse"></span></div>
+                            <div class="pulse-path pulse4"><span class="energy-pulse"></span></div>
+                            <div class="pulse-path pulse5"><span class="energy-pulse"></span></div>
+                            <div class="pulse-path pulse6"><span class="energy-pulse"></span></div>
+                            <div class="pulse-path pulse7"><span class="energy-pulse"></span></div>
+                        </div>
+
+                        <div class="energy-core"></div>
+                        <div class="sphere-core">
+                            <img src="images/profile.png" alt="Portrait of Gerald in traditional attire">
+                        </div>
+                        <div class="portrait-shade"></div>
+                        <div class="light-sweep"></div>
+
+                        <!-- Identity icons: each one links to its section -->
+                        <a class="icon heart" href="#impact" data-label="Gifted Hands and Healing Voices" aria-label="Gifted Hands and Healing Voices">
+                            <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon palette" href="#three-d" data-label="3D Character Creation" aria-label="3D Character Creation">
+                            <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon laptop" href="#innovation" data-label="Technology &amp; Innovation" aria-label="Technology and Innovation">
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon community" href="#speaking" data-label="Speaking &amp; Engagements" aria-label="Speaking and Engagements">
+                            <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon shield" href="#recognition" data-label="Recognition" aria-label="Recognition">
+                            <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon art" href="#studio" data-label="Creative Studio" aria-label="Creative Studio">
+                            <i class="fa-solid fa-pencil" aria-hidden="true"></i>
+                        </a>
+                        <a class="icon innovation" href="#stories" data-label="AI-Assisted Storytelling" aria-label="AI-Assisted Visual Storytelling">
+                            <i class="fa-solid fa-film" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="scroll-down" href="#about" aria-label="Scroll down"></a>
         </section>
 
+        <!-- =====================================
+             ABOUT
+        ===================================== -->
+        <section class="info-section" id="about">
+            <h1 class="section-title reveal">The Perspective Behind My Work</h1>
+            <p class="section-subtitle reveal">Healthcare, creativity and technology, shaped by a desire to solve meaningful problems.</p>
+            <div class="info-cards">
+                <div class="card reveal">
+                    <h1>Hi, I'm Gerald</h1>
+                    <p>My tech journey began at <strong>Let's Talk Tech</strong>. The older I get, the more I notice
+                        the blind spots around me, the needs that go unseen and the questions no one asks. Today, I am
+                        exploring how 3D and immersive technology can strengthen midwifery education and turn what
+                        I notice into practical solutions.</p>
+                    <img src="media/ger.jpeg" alt="Portrait of Gerald wearing headphones" loading="lazy">
+                </div>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="projects-section">
-  <div class="title-wrapper">
-    <h2 id="projects-title">My Projects</h2>
-  </div>
+                <div class="card reveal">
+                    <h1>A Healthcare Perspective</h1>
+                    <p>Some smiles are carefully curated, hiding stories buried by the fear of judgment.
+                        Serving at the bedside as a nurse and midwife reminds me of our shared humanity,
+                        and it shapes the problems I choose to solve.</p>
+                    <img src="images/profile.jpg" alt="Portrait of Gerald in a white uniform" loading="lazy">
+                </div>
 
-  <div class="video-container">
-    <iframe src="https://drive.google.com/file/d/1ib3cH0urQt4XSuP9ZwZEcYFvHs3l21Y1/preview"
-            width="100%" height="500" allow="autoplay" frameborder="0"></iframe>
+                <div class="card reveal">
+                    <h1>Beyond Technology</h1>
+                    <p>I believe innovation should serve people. Every step I take in my social impact journey is
+                        purpose driven, and I strongly believe a community thrives when no one is left behind.
+                        Anywhere you find a space where persons never have to wonder whether they belong,
+                        there you'll find me.</p>
+                    <video autoplay loop muted playsinline src="videos/glob.mp4" aria-hidden="true"></video>
+                    <a class="btn btn-small" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Me</a>
+                </div>
 
-    <!-- Overlay buttons (hidden initially) -->
-    <div class="video-overlay" id="video-overlay">
-      <a href="medinova.html" class="hero-btn">Explore More Projects</a>
-      <a href="blender.html" class="hero-btn">View Gallery</a>
-    </div>
-  </div>
-</section>
-
-
-        <!-- POSITION SECTION -->
-        <section id="position" class="position-section py-5">
-            <div class="title-wrapper">
-                <h2 id="position-title">POSITIONS</h1>
-            </div>
-            <div class="container-fluid">
-                <div class="row g-4 justify-content-center">
-                    <!-- Founder -->
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div id="Founder" class="position-card">
-                            <i class="fa-solid fa-user-nurse"></i>
-                            <h3><strong>Founder and CEO, Gifted Hands & Healing Voices</strong></h3>
-                            <p>Recognized by the Queen Elizabeth II Commonwealth Trust (QECT) for fostering mental wellness through art</p>
-                        </div>
-                    </div>
-
-
-                        <!-- Global Arts -->
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div id="Global-Arts" class="position-card">
-                            <i class="fa-solid fa-handshake-angle"></i>
-                            <h3><strong>Global Fellowships & Leadership Roles</strong></h3>
-                            <p>Millennium Fellow (Class of 2025), GAIMF Cohort 8, Nivishe Mental Health Fellow Cohort 6</p>
-                        </div>
-                    </div>
-
-                    <!-- Nurse -->
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div id="Nurse" class="position-card">
-                            <i class="fa-solid fa-stethoscope"></i>
-                            <h3><strong>Nursing & Midwifery Student, University of Bamenda</strong></h3>
-                            <p>Final-Year student, integrating clinical practice with creative health advocacy</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <!-- Intern -->
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div id="volunteer" class="position-card">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <h3><strong>Volunteerism </strong></h3>
-                            <p>Volunteering at CAMNAFAW Bamenda and Glorious Care Foundation</p>
-                        </div>
-                    </div>
+                <div class="card reveal">
+                    <h1>Pencil &amp; Charcoal Artist</h1>
+                    <p>My art explores social and humanitarian themes inspired by personal experiences and stories around me.
+                        While I fancy humour and poetry, I prefer telling these stories in shades of grey.</p>
+                    <img src="images/Gerico_Art6.jpeg" alt="Gerald drawing at an easel" loading="lazy">
+                    <a class="btn btn-small" href="#studio"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Explore My Art</a>
                 </div>
             </div>
         </section>
 
+        <!-- =====================================
+             A GLIMPSE INTO MY WORLD
+        ===================================== -->
+        <section class="feature-section" id="glimpse">
+            <h1 class="section-title reveal">A Glimpse Into My <span class="gradient">World</span></h1>
+
+            <p class="section-subtitle reveal">Life outside my professional responsibilities: relaxed, colourful, spontaneous and full of laughter.</p>
+
+            <div class="glimpse-grid">
+                <figure class="glimpse-card reveal">
+                    <video src="media/a-glimpse-into-my-world-natural.mp4" poster="media/a-glimpse-into-my-world-poster.jpg"
+                        controls playsinline preload="metadata"
+                        aria-label="Face painting and laughter with friends outdoors"></video>
+                </figure>
+                <figure class="glimpse-card reveal">
+                    <video src="media/a-glimpse-into-my-world-2.mp4?v=15s" poster="media/a-glimpse-into-my-world-2-poster.jpg?v=15s"
+                        controls playsinline preload="metadata"
+                        aria-label="Campus walks, the lab stand and art exhibitions with friends"></video>
+                </figure>
+            </div>
+        </section>
+
+        <!-- =====================================
+             3D CHARACTER CREATION
+        ===================================== -->
+        <section class="feature-section" id="three-d">
+            <h1 class="section-title reveal">3D <span class="gradient">Character</span> Creation</h1>
+            <p class="section-subtitle reveal">My strongest emerging creative direction.</p>
+
+            <div class="feature-intro reveal">
+                <p>I create digital characters and 3D assets, from modelling and sculpting to texturing, materials and clothing.</p>
+                <ul class="chips">
+                    <li>Modelling</li>
+                    <li>Sculpting</li>
+                    <li>Texturing</li>
+                    <li>Materials</li>
+                    <li>Clothing</li>
+                </ul>
+            </div>
+
+            <!-- 3D SHOWCASE: Diana-inspired character study (work in progress).
+                 All images are in the media folder. Click any image to enlarge it.
+                 To fill the 3D Assets box later, replace its "showcase-placeholder"
+                 block with a <figure class="showcase-item"> like the ones below. -->
+            <div class="showcase-grid showcase-3d">
+                <!-- Featured character (left, tall) -->
+                <figure class="showcase-item showcase-featured reveal">
+                    <button class="zoomable" type="button" aria-label="Enlarge image: Diana-inspired character, latest version">
+                        <img src="media/diana-featured.jpg" alt="Diana-inspired 3D character, latest rigged version (v031)" loading="lazy">
+                    </button>
+                    <figcaption>
+                        <span class="tag">Work in progress</span>
+                        <h3>Diana: a character study</h3>
+                        <p>An artistic interpretation inspired by Princess Diana. Modelling, hair cards, gown, jewellery, rigging and expressions.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Real-time animation clip -->
+                <figure class="showcase-item showcase-talking reveal">
+                    <video src="media/diana-talking.mp4?v=lorena" poster="media/diana-talking-poster.jpg?v=lorena"
+                        controls playsinline preload="metadata"
+                        aria-label="The Diana-inspired character speaking a short line"></video>
+                    <figcaption>
+                        <h3>Real-time Animation</h3>
+                        <p>Lip-sync, blinks and head movement driven by her facial shape keys.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Turntable clip -->
+                <figure class="showcase-item showcase-turntable-item reveal">
+                    <video src="media/diana-turntable-hq.mp4" poster="media/diana-turntable-hq-poster.jpg"
+                        autoplay muted loop playsinline preload="metadata"
+                        aria-label="Diana-inspired character turning a full circle"></video>
+                    <figcaption>
+                        <h3>Turntable</h3>
+                        <p>A full 360° turn.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- =====================================
+             AI-ASSISTED VISUAL STORYTELLING
+        ===================================== -->
+        <section class="feature-section" id="stories">
+            <h1 class="section-title reveal">AI-Assisted <span class="gradient">Visual</span> Storytelling</h1>
+
+            <div class="story-layout">
+                <div class="story-text reveal">
+                    <p>Through AI-assisted visual storytelling, I explore social issues such as drug abuse and bullying, with the aim of raising awareness and encouraging reflection.</p>
+                </div>
+
+                <!--
+                    HOW TO ADD A STORY VIDEO:
+                    Replace the placeholder below with:
+
+                    <figure class="story-video">
+                        <video src="videos/my-story.mp4" controls playsinline poster="images/my-story.jpg"></video>
+                        <figcaption>
+                            <h3>Story title</h3>
+                            <p>The message it communicates.</p>
+                            <span class="tag">Created with AI tools</span>
+                        </figcaption>
+                    </figure>
+                -->
+                <figure class="story-video story-feature reveal">
+                    <video controls playsinline preload="none" poster="media/bullying-trailer-b-poster.jpg"
+                        aria-label="Trailer for Bullying: A Story in Three Parts">
+                        <source src="media/bullying-trailer-b.mp4?v=25b" type="video/mp4">
+                    </video>
+                    <figcaption>
+                        <span class="tag">Trailer</span>
+                        <h3>Bullying: A Story in Three Parts</h3>
+                        <p>An advocacy storytelling project produced under Gifted Hands and Healing Voices, using AI-assisted visual storytelling to raise awareness about bullying and encourage reflection.</p>
+                        <p class="story-credit"><strong>Project attribution:</strong> Gifted Hands and Healing Voices</p>
+                        <a class="btn btn-small" href="https://www.tiktok.com/@gifted.hands.and" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i> Watch All Three Parts on TikTok
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- =====================================
+             TECHNOLOGY & INNOVATION
+        ===================================== -->
+        <section class="my-projects" id="innovation">
+            <h1 class="section-title reveal">Technology <span class="gradient">&amp;</span> Innovation</h1>
+            <p class="section-subtitle reveal">From early engineering to simulation-based learning.</p>
+
+            <!-- NurseLab (current project) -->
+            <div class="project-card reveal">
+                <div class="project-vidbox">
+                    <button class="zoomable project-photo" type="button" aria-label="Enlarge photo: NurseLab">
+                        <img src="media/nurselab.jpeg" alt="Gerald presenting at the Faculty of Health Sciences stand" loading="lazy">
+                    </button>
+                </div>
+                <div class="project-info">
+                    <span class="project-label">Current project</span>
+                    <h1>Nurse<span class="gradient">Lab</span></h1>
+                    <p>A simulation-based learning tool being developed to support
+                        midwifery students in strengthening clinical reasoning,
+                        decision-making and practical learning.</p>
+                    <p><strong>My Role:</strong> Founder</p>
+                    <span class="tag">In development</span>
+                </div>
+            </div>
+
+            <!-- Radio-Frequency Home-Based Automation System (earlier project)
+                 VIDEO: media/rf_project.mp4
+                 It keeps its original upright shape. If the file is missing, a placeholder shows. -->
+            <div class="project-card reveal">
+                <div class="project-vidbox portrait-box">
+                    <video class="project-video media-optional" src="media/rf_project.mp4#t=6" preload="metadata" muted loop playsinline></video>
+                    <div class="hover-sign"></div>
+                    <div class="media-fallback portrait-fallback">
+                        <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+                        <span>RF Home Automation</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-label">Earlier project</span>
+                    <h1>Radio-Frequency <span class="gradient">Home Automation</span> System</h1>
+                    <p>A home automation system designed to enable wireless control of household appliances
+                        using radio-frequency technology.</p>
+                    <p><strong>Technologies:</strong> Arduino | Proteus</p>
+                </div>
+            </div>
+
+            <!-- My Portfolio Website: a scroll-through recording of this site -->
+            <div class="project-card reveal">
+                <div class="project-vidbox">
+                    <video class="project-video" src="media/portfolio-scroll.mp4" poster="media/portfolio-scroll-poster.jpg"
+                        preload="metadata" muted loop playsinline
+                        aria-label="Scrolling through this portfolio website from top to bottom"></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info">
+                    <span class="project-label">Web project</span>
+                    <h1>My Portfolio <span class="gradient">Website</span></h1>
+                    <p>The website you are on now, designed and built to bring my 3D work, storytelling, art and projects together in one place.</p>
+                    <p><strong>Technologies:</strong> HTML | CSS | JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             CREATIVE STUDIO (selected works – TikTok is the extended gallery)
+        ===================================== -->
+        <section class="art-section" id="studio">
+            <h1 class="section-title reveal">Creative <span class="gradient">Studio</span></h1>
+            <p class="section-subtitle reveal">Selected pencil and charcoal works.</p>
+
+            <div class="art-intro">
+                <div class="art-video reveal">
+                    <video class="project-video" src="videos/project1.mp4#t=0.5" preload="metadata" muted loop playsinline></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="art-text reveal">
+                    <h2>Stories in <span class="gradient">Shades of Grey</span></h2>
+                    <p>My art explores social and humanitarian themes inspired by personal experiences and stories around me.
+                        While I fancy humour and poetry, I prefer telling these stories in shades of grey.</p>
+                    <p>Drawing by hand in pencil and charcoal is the foundation of my creativity.</p>
+                    <a class="btn" href="https://www.tiktok.com/@cheagerald" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i> See more on TikTok
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             GIFTED HANDS AND HEALING VOICES
+        ===================================== -->
+        <section class="impact-section" id="impact">
+            <video class="impact-bg" src="videos/project4.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+            <div class="impact-content reveal">
+                <span class="eyebrow"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i> Founder</span>
+                <h1>Gifted Hands <span class="warm-gradient">and</span> Healing Voices</h1>
+                <p>I founded Gifted Hands and Healing Voices, an initiative that uses art to foster well-being,
+                    self-expression, inclusion and resilience among vulnerable groups, including persons living
+                    with disabilities, orphans and adolescents.</p>
+                <div class="values">
+                    <div><i class="fa-solid fa-spa" aria-hidden="true"></i> Well-being</div>
+                    <div><i class="fa-solid fa-palette" aria-hidden="true"></i> Self-expression</div>
+                    <div><i class="fa-solid fa-people-group" aria-hidden="true"></i> Inclusion &amp; resilience</div>
+                </div>
+                <div class="impact-actions">
+                    <a class="btn btn-warm" href="https://giftedhandsandhealingvoices.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe" aria-hidden="true"></i> Visit Website</a>
+                    <a class="btn btn-warm" href="https://www.tiktok.com/@gifted.hands.and" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok" aria-hidden="true"></i> Follow on TikTok</a>
+                    <a class="btn btn-warm" href="#contact"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Partner or Support</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             SPEAKING, FACILITATION & ENGAGEMENTS
+             PHOTOS: save them as images/engagement-arts-health.jpg and images/engagement-whd.jpg
+             Until a photo exists, an icon shows instead. Exhibitions & Showcases is part of this section.
+        ===================================== -->
+        <section class="speaking-section" id="speaking">
+            <h1 class="section-title reveal">Speaking, Facilitation <span class="gradient">&amp;</span> Engagements</h1>
+
+            <div class="engagement-grid">
+                <article class="engagement-card reveal">
+                    <div class="engagement-media">
+                        <img class="media-optional" src="media/arts-health-summit-web.jpg" alt="Gerald with participants at the Young Leaders for Arts and Health Summit, Bamenda">
+                        <div class="media-fallback"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="engagement-body">
+                        <span class="engagement-role">MC and Panelist</span>
+                        <h3>Young Leaders for Arts and Health Summit</h3>
+                        <!-- Add the year and one line about your contribution here -->
+                    </div>
+                </article>
+
+                <article class="engagement-card reveal">
+                    <div class="engagement-media">
+                        <img class="media-optional" src="media/whd1.jpeg" alt="Gerald as Master of Ceremonies at a World Humanitarian Day event" style="object-position: 70% 30%;">
+                        <div class="media-fallback"><i class="fa-solid fa-microphone" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="engagement-body">
+                        <span class="engagement-role">Master of Ceremonies · 2026</span>
+                        <h3>World Humanitarian Day</h3>
+                        <!-- Add the year(s) here -->
+                    </div>
+                </article>
+            </div>
+
+            <!-- EXHIBITIONS & SHOWCASES
+                 PHOTOS: save them with these names and they appear automatically
+                 (until a photo exists, an icon shows instead):
+                   images/exhibition-peace-2023.jpg
+                   images/exhibition-whd.jpg
+                   images/exhibition-world-aids-day.jpg
+                 A video also works: replace <img ...> with
+                   <video class="media-optional" src="media/FILE.mp4" muted loop playsinline autoplay></video> -->
+            <h2 class="sub-title reveal" id="exhibitions">Exhibitions <span class="gradient">&amp;</span> Showcases</h2>
+            <div class="engagement-grid exhibition-grid">
+                <article class="engagement-card reveal">
+                    <div class="engagement-media">
+                        <img class="media-optional" src="media/exhi3-web.jpg" alt="Gerald with friends in traditional attire at the Peace and Mental Well-being Art Exhibition, Bamenda 2023" style="object-position: 50% 22%;">
+                        <div class="media-fallback"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="engagement-body">
+                        <span class="engagement-role">Art Exhibition · Bamenda · 2023</span>
+                        <h3>Peace and Mental Well-being Art Exhibition</h3>
+                        <p>An art exhibition in Bamenda on peace and mental well-being, where I exhibited my work.</p>
+                    </div>
+                </article>
 
 
+                <article class="engagement-card reveal">
+                    <div class="engagement-media">
+                        <img class="media-optional" src="media/whd3.jpeg" alt="Gerald presenting his artwork To Be Human at a World Humanitarian Day exhibition" style="object-position: 55% 45%;">
+                        <div class="media-fallback"><i class="fa-solid fa-hands-holding-circle" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="engagement-body">
+                        <span class="engagement-role">Exhibition · 2026</span>
+                        <h3>World Humanitarian Day Exhibitions</h3>
+                        <p>Exhibiting my work during World Humanitarian Day events, including my artwork <em>To Be Human</em>.</p>
+                    </div>
+                </article>
 
+                <article class="engagement-card reveal">
+                    <div class="engagement-media">
+                        <img class="media-optional" src="media/spokenword.jpeg" alt="Gerald performing spoken word for World AIDS Day with CAMNAFAW Bamenda" style="object-position: 30% 45%;">
+                        <div class="media-fallback"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="engagement-body">
+                        <span class="engagement-role">Spoken Word · CAMNAFAW Bamenda</span>
+                        <h3>World AIDS Day</h3>
+                        <p>A spoken word performance under CAMNAFAW Bamenda as my creative contribution to World AIDS Day.</p>
+                    </div>
+                </article>
 
-<!-- CALL TO ACTION SECTION -->
-<section id="cta" class="cta-section">
-  <div class="cta-wrapper">
-    <h2 class="cta-title">Let’s Collaborate</h2>
-    <p class="cta-tagline">
-      I blend art, health, and leadership to put smiles on faces — let’s build together.
-    </p>
-    <div class="cta-buttons">
-      <a href="mailto:yourname@email.com" class="hero-btn">Email Me</a>
-      <a href="https://www.linkedin.com/in/yourprofile" class="hero-btn">Connect on LinkedIn</a>
+                <article class="engagement-card reveal">
+                    <div class="engagement-media">
+                        <img class="media-optional" src="media/getec_2026.jpeg" alt="Gerald at GETEC, the Cameroonian Student Genius and Talent Fair" loading="lazy">
+                        <div class="media-fallback"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="engagement-body">
+                        <span class="engagement-role">Innovation Exhibition</span>
+                        <h3>GETEC: Cameroonian Student Genius and Talent Fair</h3>
+                        <p>I represented the Faculty of Health Sciences and exhibited a clinical simulation platform.</p>
+                    </div>
+                </article>
+            </div>
+
+            <h2 class="sub-title reveal">Achievements <span class="gradient">&amp;</span> Recognition</h2>
+            <div class="award-card reveal" id="recognition">
+                <img class="award-photo" src="media/qect.jpeg" alt="Gerald holding his Queen Elizabeth II Commonwealth Trust award" loading="lazy">
+                <i class="fa-solid fa-award" aria-hidden="true"></i>
+                <div>
+                    <span class="award-year">2026 · Recognition</span>
+                    <h2>Queen Elizabeth II Commonwealth Trust</h2>
+                    <p>100 Young Leaders Awardee</p>
+                    <!-- When you have the official link, add:
+                    <a class="btn btn-small" href="PASTE-LINK-HERE" target="_blank" rel="noopener">Read the announcement</a>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             SKILLS & TOOLS
+        ===================================== -->
+        <section class="skills-section" id="skills">
+            <h1 class="section-title reveal">Skills <span class="gradient">&amp;</span> Tools</h1>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                    <h3>3D Design &amp; Interactive</h3>
+                    <p>3D modelling, character creation and real-time interactive experiences.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fa-solid fa-film" aria-hidden="true"></i>
+                    <h3>Digital Storytelling &amp; Video</h3>
+                    <p>AI-assisted visual storytelling and video editing.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fa-solid fa-pencil" aria-hidden="true"></i>
+                    <h3>Traditional Art</h3>
+                    <p>Pencil and charcoal drawing.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+                    <h3>Technology &amp; Research</h3>
+                    <p>Electronics prototyping, circuit simulation, web development and research.</p>
+                </div>
+            </div>
+
+            <!-- Scrolling logo strip: to add a logo, copy one "item" line and raise --quantity -->
+            <div class="slider" style="--width: 90px; --height: 90px; --quantity: 4;">
+                <div class="list">
+                    <div class="item" style="--position: 1"><img src="skills/proteus.png" alt="Proteus" title="Proteus"></div>
+                    <div class="item" style="--position: 2"><img src="skills/chartgpt.png" alt="ChatGPT" title="ChatGPT"></div>
+                    <div class="item" style="--position: 3"><img src="skills/arduino.png" alt="Arduino" title="Arduino"></div>
+                    <div class="item" style="--position: 4"><img src="skills/google-flow.png" alt="Google Flow" title="Google Flow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             CONTACT
+        ===================================== -->
+        <section class="contact-section" id="contact">
+            <h1 class="section-title reveal">Let's Create Something <span class="gradient">Meaningful</span></h1>
+            <p class="section-subtitle reveal">Open to collaborations and opportunities.</p>
+
+            <div class="contact-layout">
+                <div class="social-box reveal">
+                    <a href="https://www.linkedin.com/in/gericoco" target="_blank" rel="noopener">
+                        <img src="skills/linkedin.png" alt=""> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/gerico_arts" target="_blank" rel="noopener">
+                        <img src="skills/instagram.png" alt=""> Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@cheagerald" target="_blank" rel="noopener">
+                        <img src="skills/tiktok.png" alt=""> TikTok
+                    </a>
+                    <a href="https://www.facebook.com/chea.gerald" target="_blank" rel="noopener">
+                        <img src="skills/facebook.png" alt=""> Facebook
+                    </a>
+                </div>
+
+                <!-- This form opens the visitor's email app with the message ready to send.
+                     Set your email address at the top of app.js (CONTACT_EMAIL). -->
+                <form class="contact-box reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden-field" hidden><label>Leave this empty: <input name="bot-field"></label></p>
+                    <label for="cf-name">Full Name</label>
+                    <input id="cf-name" name="name" type="text" placeholder="Your full name" required>
+
+                    <label for="cf-email">Email Address</label>
+                    <input id="cf-email" name="email" type="email" placeholder="Your email" required>
+
+                    <label for="cf-message">Your Message</label>
+                    <textarea id="cf-message" name="message" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+                    <button class="btn btn-primary" type="submit">Send Message <i class="fa-solid fa-envelope" aria-hidden="true"></i></button>
+                    <p class="form-note" id="formNote" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- =====================================
+             FOOTER
+        ===================================== -->
+        <footer class="footer">
+            <p>&copy; <span id="year">2026</span> Gerald (Gerico). All rights reserved.</p>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/gericoco" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/gerico_arts" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.tiktok.com/@cheagerald" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/chea.gerald" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </footer>
     </div>
-  </div>
-</section>
 
-
-<!-- FOOTER SECTION -->
-<footer id="footer" class="footer-section">
-  <div class="footer-content">
-    <p class="footer-text">© 2026 Chea Gerald Nde T. All rights reserved.</p>
-    <div class="footer-icons">
-      <a href="https://www.linkedin.com/in/gericoco" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/chea.gerald" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/gerico_arts?igsh=czJueXUxcndtMjAy" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@cheagerald?_t=ZM-8sypTP2jxNm&_r=1" class="footer-icon"><i class="fa-brands fa-tiktok"></i></a>
+    <!-- Art lightbox (opens when you click an artwork) -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" aria-hidden="true" inert>
+        <button class="lightbox-close" type="button" aria-label="Close artwork"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        <img src="" alt="">
     </div>
-  </div>
-</footer>
-       
-       
-    </main>
 
-<!-- OLD JAVA 
- 
-<script>
-  const img = document.getElementById("Gericoco");
-
-  // List of images to cycle through
-  const images = [
-    "Geri.png",  // first photo
-    "Geri1.png",  // second photo
-    "Geri2.png",  // third photo. 
-    // Add more photos if u have.
-  ];
-
-  let currentIndex = 0;
-
-  img.addEventListener("click", () => {
-    // Move to next image
-    currentIndex = (currentIndex + 1) % images.length;
-    img.src = images[currentIndex];
-  });
-</script>-->
-    <script>
-  const wrappers = document.querySelectorAll(".photo-wrapper");
-  const nextBtn = document.getElementById("next-btn");
-  let currentIndex = 0;
-
-  // Cycle images with button
-  nextBtn.addEventListener("click", () => {
-    wrappers[currentIndex].style.display = "none";
-    currentIndex = (currentIndex + 1) % wrappers.length;
-    wrappers[currentIndex].style.display = "inline-block";
-  });
-
-  // Click image to go to page
-  wrappers.forEach(wrapper => {
-    const img = wrapper.querySelector("img");
-    img.addEventListener("click", () => {
-      const link = img.getAttribute("data-link");
-      if (link) window.location.href = link;
-    });
-  });
-</script>
-
-<!-- Reveal buttons on vid -->
-<script>
-  const overlay = document.getElementById('video-overlay');
-  overlay.style.display = 'none';
-
-  // Reveal overlay after 20 seconds (20,000 ms)
-  setTimeout(() => {
-    overlay.style.display = 'flex';
-    overlay.style.opacity = 0;
-    setTimeout(() => overlay.style.opacity = 1, 100); // smooth fade-in
-  }, 20000);
-</script>
+    <script src="app.js"></script>
 </body>
-
 </html>
